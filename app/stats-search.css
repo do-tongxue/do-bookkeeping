@@ -1,0 +1,91 @@
+.topbar-stats .top-nav { flex: none; }
+.topbar-stats .stats-topbar-ledger-trigger { min-width: 0; flex: 0 1 auto; overflow: hidden; }
+.topbar-stats .stats-topbar-ledger-trigger .brand-mark { flex: none; }
+.topbar-stats .stats-topbar-ledger-label {
+  min-width: 0;
+  overflow: hidden;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.app-shell .brand-lockup.logo-only > .brand-mark { display: inline-flex; }
+
+.stats-toolbar {
+  grid-template-areas: "range periods" "search search";
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 10px;
+}
+
+.stats-toolbar > .stats-range-control {
+  width: min(100%, 188px);
+  justify-self: start;
+  grid-template-columns: 28px minmax(0, 1fr) 28px;
+}
+
+.stats-toolbar > .stats-range-control > button:first-child,
+.stats-toolbar > .stats-range-control > button:last-child { width: 28px; height: 36px; }
+
+.stats-toolbar > .stats-range-control .month-picker-trigger {
+  padding-inline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.stats-search-field {
+  grid-area: search;
+  width: 100%;
+  min-width: 0;
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--paper);
+  color: var(--quiet);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.stats-search-field:focus-within { border-color: var(--forest); }
+.stats-search-field > svg { width: 16px; height: 16px; flex: none; stroke-width: 1.8; }
+.stats-search-field input {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--ink);
+  font-size: 16px;
+}
+.stats-search-field input::-webkit-search-cancel-button { display: none; }
+.stats-search-field > button { width: 24px; height: 28px; padding: 0; border: 0; background: transparent; color: var(--quiet); display: grid; place-items: center; flex: none; }
+.stats-search-field > button svg { width: 15px; height: 15px; }
+
+.stats-search-results { padding: 18px 0 8px; border-bottom: 1px solid var(--line); }
+.stats-search-results > header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.stats-search-results h2 { margin: 0; color: var(--ink); font-size: 15px; font-weight: 600; }
+.stats-search-results header span { color: var(--quiet); font-size: 12px; white-space: nowrap; }
+.stats-search-list { margin-top: 9px; }
+.stats-search-result { min-width: 0; min-height: 60px; padding: 9px 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 12px; }
+.stats-search-result > span { min-width: 0; display: grid; gap: 3px; }
+.stats-search-result strong,
+.stats-search-result small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.stats-search-result strong { color: var(--ink); font-size: 14px; font-weight: 600; }
+.stats-search-result small { color: var(--quiet); font-size: 12px; }
+.stats-search-result em { color: var(--ink); font-size: 14px; font-style: normal; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+.stats-search-result em.income { color: var(--forest); }
+.stats-search-empty { margin: 15px 0 10px; color: var(--quiet); font-size: 13px; }
+
+@media (max-width: 359px) {
+  .stats-toolbar { grid-template-areas: "periods" "range" "search"; grid-template-columns: minmax(0, 1fr); }
+  .stats-toolbar > .stats-range-control { width: min(100%, 188px); }
+  .stats-toolbar > .stats-range-control .month-picker-trigger { font-size: 12px; }
+  .stats-search-field { padding-inline: 8px; gap: 5px; }
+  .stats-search-field input { font-size: 16px; }
+}

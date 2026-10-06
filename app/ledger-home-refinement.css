@@ -1,0 +1,53 @@
+/* Keep the monthly totals visually distinct from the lighter daily ledger amounts. */
+html[data-visual-theme] .app-shell.has-composer .month-summary > .month-total {
+  font-size: clamp(42px, 12vw, 50px);
+  font-weight: 650 !important;
+  letter-spacing: -0.035em;
+}
+
+html[data-visual-theme] .app-shell.has-composer .month-summary dd {
+  font-weight: 650 !important;
+}
+
+@media (max-width: 767px) {
+  html[data-visual-theme] .app-shell.has-composer .ledger-grid {
+    gap: 10px;
+  }
+
+  html[data-visual-theme] .app-shell.has-composer .flow-toolbar {
+    margin-bottom: 4px;
+  }
+
+  html[data-visual-theme] .app-shell.has-composer .entry-row {
+    grid-template-columns: 42px minmax(0, 1fr) minmax(76px, auto);
+  }
+
+  html[data-visual-theme] .app-shell.has-composer .category-icon {
+    width: 42px;
+    height: 42px;
+    border-color: transparent;
+    border-radius: 12px;
+    background: var(--muted);
+  }
+
+  html[data-visual-theme] .app-shell.has-composer .category-icon svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .entry-fab-trigger:not(.listening) {
+    width: 52px;
+    min-width: 52px;
+    height: 52px;
+    padding: 0;
+  }
+
+  .entry-fab-trigger:not(.listening) svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .entry-fab-trigger:not(.listening) span {
+    display: none;
+  }
+}

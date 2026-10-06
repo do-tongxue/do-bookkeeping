@@ -1,0 +1,353 @@
+/* Color-only layer. Typography and component geometry come from mist-paper and theme-geometry.css. */
+html[data-visual-theme="deep-ink-blue"] {
+  --background: #ffffff;
+  --foreground: #20323b;
+  --card: #ffffff;
+  --card-foreground: #20323b;
+  --popover: #ffffff;
+  --popover-foreground: #20323b;
+  --primary: #2c8096;
+  --primary-foreground: #ffffff;
+  --secondary: #e3f0f2;
+  --secondary-foreground: #1f4f60;
+  --muted: #f5f8f9;
+  --muted-foreground: #78878d;
+  --accent: #e2f0f3;
+  --accent-foreground: #20566a;
+  --border: #e1e8ea;
+  --input: #e1e8ea;
+  --ring: #61a4b5;
+  --page: #ffffff;
+  --paper: #ffffff;
+  --ink: #20323b;
+  --forest: #2d7c93;
+  --forest-deep: #182f39;
+  --sage: #edf5f6;
+  --summary-card: #192d36;
+  --summary-tab: #fbfcfc;
+  --line: #e1e8ea;
+  --quiet: #7b8990;
+  --chart-1: #2c8096;
+  --chart-2: #537f8d;
+  --chart-3: #98b4bc;
+  --chart-4: #c7bba9;
+  --chart-5: #849aa5;
+  --chart-6: #b4b1a9;
+  --chart-7: #d8e2e5;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer {
+  --page: #ffffff;
+  --paper: #ffffff;
+  --ink: #20323b;
+  --forest: #2d7c93;
+  --forest-deep: #182f39;
+  --sage: #edf5f6;
+  --muted: #f5f8f9;
+  --line: #e1e8ea;
+  --quiet: #7b8990;
+  --summary-card: #192d36;
+  --summary-tab: #fbfcfc;
+}
+
+html[data-visual-theme="deep-ink-blue"],
+html[data-visual-theme="deep-ink-blue"] body,
+html[data-visual-theme="deep-ink-blue"] .app-shell,
+html[data-visual-theme="deep-ink-blue"] .topbar {
+  background: #ffffff;
+  color: #20323b;
+}
+
+html[data-visual-theme="deep-ink-blue"] .brand-mark,
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .brand-mark {
+  background: #192d36;
+  color: #ffffff;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell .brand-lockup,
+html[data-visual-theme="deep-ink-blue"] .app-shell .topbar-ledger-trigger {
+  color: #20323b;
+}
+
+html[data-visual-theme="deep-ink-blue"] .top-nav-button,
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .top-nav-button {
+  color: #617179;
+}
+
+html[data-visual-theme="deep-ink-blue"] .top-nav-button:hover,
+html[data-visual-theme="deep-ink-blue"] .top-nav-button.active,
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .top-nav-button.active {
+  color: #2c8096;
+}
+
+html[data-visual-theme="deep-ink-blue"] .top-nav-button.active::after {
+  background: #2c8096;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .summary-ledger-tabs,
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .summary-ledger-tabs.three-tabs {
+  background: #fbfcfc;
+  border-color: #e0e8ea;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .summary-ledger-tabs .summary-ledger-tab {
+  color: #60727a;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .summary-ledger-tabs .summary-ledger-tab.active {
+  background: #2c8096;
+  color: #ffffff;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .summary-ledger-tab:focus-visible {
+  box-shadow: inset 0 0 0 1px #2c8096;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .summary-card-frame.has-tabs .month-summary,
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .month-summary {
+  background: #192d36;
+  color: #ffffff;
+  box-shadow: 0 8px 22px rgba(25, 45, 54, 0.08);
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .month-summary-header > p,
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .month-picker-trigger.card,
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .month-picker-trigger.card svg,
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .month-summary > .month-total,
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .month-summary dd {
+  color: #ffffff;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .month-summary dt {
+  color: #b7c9cf;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .month-summary dl,
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .month-summary dl div + div {
+  border-color: rgba(150, 198, 209, 0.4);
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .view-mode-switch,
+html[data-visual-theme="deep-ink-blue"] .stats-period-tabs,
+html[data-visual-theme="deep-ink-blue"] .stats-type-switch,
+html[data-visual-theme="deep-ink-blue"] .category-management-tabs {
+  background: #f3f7f8;
+}
+
+html[data-visual-theme="deep-ink-blue"] .view-mode-switch button,
+html[data-visual-theme="deep-ink-blue"] .stats-period-tabs button,
+html[data-visual-theme="deep-ink-blue"] .stats-type-switch button,
+html[data-visual-theme="deep-ink-blue"] .category-management-tabs button {
+  color: #718189;
+}
+
+html[data-visual-theme="deep-ink-blue"] .view-mode-switch button.active,
+html[data-visual-theme="deep-ink-blue"] .stats-period-tabs button.active,
+html[data-visual-theme="deep-ink-blue"] .stats-type-switch button.active,
+html[data-visual-theme="deep-ink-blue"] .category-management-tabs button.active {
+  background: #ffffff;
+  color: #20586b;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .day-group header h2 {
+  color: #304650;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .day-group header span {
+  color: #7c8a90;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .entry-row {
+  border-bottom-color: #e5ecee;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .category-icon,
+html[data-visual-theme="deep-ink-blue"] .ranking-icon,
+html[data-visual-theme="deep-ink-blue"] .calendar-entry-list > button > span:first-child {
+  background: #f8fafb;
+  border-color: #e0e8eb;
+  color: #3f7484;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .entry-copy strong,
+html[data-visual-theme="deep-ink-blue"] .category-ranking strong,
+html[data-visual-theme="deep-ink-blue"] .calendar-entry-list strong {
+  color: #20323b;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .entry-copy small,
+html[data-visual-theme="deep-ink-blue"] .category-ranking small {
+  color: #7d8b91;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .entry-amount,
+html[data-visual-theme="deep-ink-blue"] .category-detail strong,
+html[data-visual-theme="deep-ink-blue"] .calendar-entry-list em,
+html[data-visual-theme="deep-ink-blue"] .calendar-cell > strong {
+  color: #31464f;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .mobile-entry-actions {
+  background: #ffffff;
+  border-color: #dfe8ea;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .mobile-entry-actions button {
+  color: #466773;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .mobile-entry-actions .mobile-manual-entry {
+  background: #2c8096;
+  color: #ffffff;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .mobile-entry-divider {
+  background: #dfe8ea;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .mobile-composer .quick-composer {
+  background: #ffffff;
+  border-color: #dfe8ea;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .mobile-composer .composer-input textarea,
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .mobile-composer .composer-input textarea::placeholder {
+  color: #7b8990;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .mobile-composer .mic-button {
+  color: #466773;
+}
+
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .mobile-composer .send-button,
+html[data-visual-theme="deep-ink-blue"] .app-shell.has-composer .mobile-composer .send-button:disabled {
+  background: #2c8096;
+  color: #ffffff;
+}
+
+html[data-visual-theme="deep-ink-blue"] .stats-ledger-trigger,
+html[data-visual-theme="deep-ink-blue"] .stats-range-control strong,
+html[data-visual-theme="deep-ink-blue"] .stats-range-control .month-picker-trigger,
+html[data-visual-theme="deep-ink-blue"] .stats-week-picker span,
+html[data-visual-theme="deep-ink-blue"] .stats-year-select,
+html[data-visual-theme="deep-ink-blue"] .stats-search-results h2,
+html[data-visual-theme="deep-ink-blue"] .stats-search-result strong,
+html[data-visual-theme="deep-ink-blue"] .stats-search-result em,
+html[data-visual-theme="deep-ink-blue"] .stats-summary-strip strong,
+html[data-visual-theme="deep-ink-blue"] .donut-center strong,
+html[data-visual-theme="deep-ink-blue"] .category-ranking em,
+html[data-visual-theme="deep-ink-blue"] .category-detail em,
+html[data-visual-theme="deep-ink-blue"] .stats-donut-card > header h2 {
+  color: #20323b;
+}
+
+html[data-visual-theme="deep-ink-blue"] .stats-ledger-trigger > svg:first-child,
+html[data-visual-theme="deep-ink-blue"] .calendar-day-detail header p {
+  color: #2c8096;
+}
+
+html[data-visual-theme="deep-ink-blue"] .stats-search-field {
+  background: #ffffff;
+  border-color: #dfe8ea;
+  color: #6c7f88;
+}
+
+html[data-visual-theme="deep-ink-blue"] .stats-search-field:focus-within {
+  border-color: #2c8096;
+}
+
+html[data-visual-theme="deep-ink-blue"] .stats-summary-strip span,
+html[data-visual-theme="deep-ink-blue"] .stats-donut-card > header span,
+html[data-visual-theme="deep-ink-blue"] .donut-center span,
+html[data-visual-theme="deep-ink-blue"] .donut-center small,
+html[data-visual-theme="deep-ink-blue"] .category-detail,
+html[data-visual-theme="deep-ink-blue"] .stats-search-results header span,
+html[data-visual-theme="deep-ink-blue"] .stats-search-result small {
+  color: #7b8990;
+}
+
+html[data-visual-theme="deep-ink-blue"] .calendar-money.expense {
+  color: #31464f;
+}
+
+html[data-visual-theme="deep-ink-blue"] .recharts-sector:focus {
+  outline-color: #2c8096;
+}
+
+html[data-visual-theme="deep-ink-blue"] .compact-heading > p,
+html[data-visual-theme="deep-ink-blue"] .page-heading > p,
+html[data-visual-theme="deep-ink-blue"] .compact-heading > span,
+html[data-visual-theme="deep-ink-blue"] .page-heading > span,
+html[data-visual-theme="deep-ink-blue"] .me-menu-row small,
+html[data-visual-theme="deep-ink-blue"] .settings-title p,
+html[data-visual-theme="deep-ink-blue"] .managed-list small,
+html[data-visual-theme="deep-ink-blue"] .category-management-note,
+html[data-visual-theme="deep-ink-blue"] .data-actions small,
+html[data-visual-theme="deep-ink-blue"] .privacy-note p,
+html[data-visual-theme="deep-ink-blue"] .future-management p,
+html[data-visual-theme="deep-ink-blue"] .subpage-heading p,
+html[data-visual-theme="deep-ink-blue"] .subpage-heading span,
+html[data-visual-theme="deep-ink-blue"] .managed-ledger-copy small,
+html[data-visual-theme="deep-ink-blue"] .managed-member-ledger small {
+  color: #7b8990;
+}
+
+html[data-visual-theme="deep-ink-blue"] .compact-heading h1,
+html[data-visual-theme="deep-ink-blue"] .page-heading h1,
+html[data-visual-theme="deep-ink-blue"] .me-menu-row strong,
+html[data-visual-theme="deep-ink-blue"] .settings-title h2,
+html[data-visual-theme="deep-ink-blue"] .managed-list strong,
+html[data-visual-theme="deep-ink-blue"] .managed-category-copy strong,
+html[data-visual-theme="deep-ink-blue"] .data-actions strong,
+html[data-visual-theme="deep-ink-blue"] .subpage-heading h1,
+html[data-visual-theme="deep-ink-blue"] .managed-ledger-copy strong,
+html[data-visual-theme="deep-ink-blue"] .managed-member-ledger strong {
+  color: #20323b;
+}
+
+html[data-visual-theme="deep-ink-blue"] .settings-icon,
+html[data-visual-theme="deep-ink-blue"] .me-menu-row > span:first-child,
+html[data-visual-theme="deep-ink-blue"] .managed-list > button > span:first-child,
+html[data-visual-theme="deep-ink-blue"] .managed-category-icon,
+html[data-visual-theme="deep-ink-blue"] .managed-ledger-icon {
+  background: #edf5f6;
+  border-color: #dfe8ea;
+  color: #3f7484;
+}
+
+html[data-visual-theme="deep-ink-blue"] .me-menu-row > svg,
+html[data-visual-theme="deep-ink-blue"] .category-expand-icon,
+html[data-visual-theme="deep-ink-blue"] .data-actions > button > svg:last-child {
+  color: #7b8990;
+}
+
+html[data-visual-theme="deep-ink-blue"] .ledger-type-badge.personal,
+html[data-visual-theme="deep-ink-blue"] .ledger-type-badge.family {
+  background: #e3f0f2;
+  color: #20586b;
+}
+
+html[data-visual-theme="deep-ink-blue"] .managed-ledger-actions .current-badge,
+html[data-visual-theme="deep-ink-blue"] .managed-member-ledger .current-badge {
+  background: #2c8096;
+  color: #ffffff;
+}
+
+html[data-visual-theme="deep-ink-blue"] .set-default-ledger-button,
+html[data-visual-theme="deep-ink-blue"] .remove-category-button {
+  color: #20586b;
+}
+
+html[data-visual-theme="deep-ink-blue"] :is(.ledger-menu, .month-picker-popover, .rename-dialog, .create-category-dialog, .review-item, .entry-sheet) {
+  background: #ffffff;
+  border-color: #e1e8ea;
+  color: #20323b;
+}
+
+html[data-visual-theme="deep-ink-blue"] :is(input, textarea, select) {
+  color: #20323b;
+}
+
+html[data-visual-theme="deep-ink-blue"] :is(input, textarea)::placeholder {
+  color: #7b8990;
+}

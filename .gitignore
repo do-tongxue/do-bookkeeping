@@ -1,0 +1,78 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/.vinext/
+/out/
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+!.env.example
+.dev.vars*
+
+# vercel
+.vercel
+
+# typescript
+next-env.d.ts
+/dist/
+/.wrangler/
+/.sites-runtime/
+/.openai/hosting.json
+/.agents/
+/.codex/
+/outputs/
+/work/
+
+# Private runtime data and user-created exports never belong in the template.
+/private/
+/wrangler.jsonc
+/backups/
+/exports/
+/previews/
+/screenshots/private/
+*.sqlite
+*.sqlite3
+*.db
+*.backup.json
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.zip
+*.7z
+*.rar
+*.shortcut
+轻账备份-*.json
+轻账流水-*.csv
+*.ses
+*.tsbuildinfo
+
+# Credentials and signing material.
+*.key
+*.p12
+*.pfx
+*.jks

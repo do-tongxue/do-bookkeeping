@@ -1,0 +1,215 @@
+/* All visual themes share the approved 110% scale and component geometry. */
+html[data-visual-theme] {
+  zoom: 1.1;
+  --font-app: "PingFang SC", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+html[data-visual-theme] .entry-sheet {
+  height: calc(100dvh / 1.1) !important;
+  max-height: calc(100dvh / 1.1);
+}
+
+@media (max-width: 767px) {
+  html[data-visual-theme] .entry-sheet { width: calc(100vw / 1.1) !important; }
+}
+
+html[data-visual-theme] body,
+html[data-visual-theme] .app-shell {
+  font-family: var(--font-app);
+}
+
+html[data-visual-theme] .app-shell .brand-lockup,
+html[data-visual-theme] .app-shell.has-composer .brand-lockup,
+html[data-visual-theme] .app-shell .topbar-ledger-trigger,
+html[data-visual-theme] .app-shell.has-composer .topbar-ledger-trigger {
+  font-family: var(--font-app);
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+html[data-visual-theme] .app-shell .top-nav-button,
+html[data-visual-theme] .app-shell.has-composer .top-nav-button {
+  padding-inline: 10px;
+  font-family: var(--font-app);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+html[data-visual-theme] .app-shell .top-nav-button.active,
+html[data-visual-theme] .app-shell.has-composer .top-nav-button.active {
+  font-weight: 400;
+}
+
+html[data-visual-theme] .app-shell.has-composer .summary-card-frame.has-tabs {
+  gap: 16px;
+}
+
+html[data-visual-theme] .app-shell.has-composer .summary-ledger-tabs,
+html[data-visual-theme] .app-shell.has-composer .summary-ledger-tabs.three-tabs {
+  width: 100%;
+  height: 36px;
+  margin-inline: 0;
+  padding: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 12px;
+}
+
+html[data-visual-theme] .app-shell.has-composer .summary-ledger-tabs .summary-ledger-tab,
+html[data-visual-theme] .app-shell.has-composer .summary-ledger-tabs .summary-ledger-tab.active {
+  flex: 1 1 0;
+  height: 30px;
+  border-radius: 9px;
+  font-family: var(--font-app);
+  font-size: 15px;
+  font-weight: 400 !important;
+}
+
+html[data-visual-theme] .app-shell.has-composer .month-summary-header > p,
+html[data-visual-theme] .app-shell.has-composer .month-picker-trigger.card {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+html[data-visual-theme] .app-shell.has-composer .month-summary > .month-total {
+  font-family: "Helvetica Neue", "PingFang SC", -apple-system, sans-serif;
+  font-size: 44px;
+  font-weight: 300;
+  letter-spacing: -0.6px;
+}
+
+html[data-visual-theme] .app-shell.has-composer .month-total .money-decimal {
+  font-size: 1em;
+  letter-spacing: 0;
+}
+
+html[data-visual-theme] .app-shell.has-composer .month-summary dt {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+html[data-visual-theme] .app-shell.has-composer .month-summary dd {
+  font-family: "Helvetica Neue", "PingFang SC", -apple-system, sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+html[data-visual-theme] .app-shell.has-composer .day-group header h2,
+html[data-visual-theme] .app-shell.has-composer .day-group header span {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+html[data-visual-theme] .app-shell.has-composer .day-group header span {
+  font-family: "Helvetica Neue", "PingFang SC", -apple-system, sans-serif;
+}
+
+html[data-visual-theme] .view-mode-switch button,
+html[data-visual-theme] .stats-period-tabs button,
+html[data-visual-theme] .stats-type-switch button,
+html[data-visual-theme] .category-management-tabs button {
+  font-weight: 400 !important;
+}
+
+html[data-visual-theme] .view-mode-switch button.active,
+html[data-visual-theme] .stats-period-tabs button.active,
+html[data-visual-theme] .stats-type-switch button.active,
+html[data-visual-theme] .category-management-tabs button.active {
+  font-weight: 500 !important;
+}
+
+html[data-visual-theme] .stats-period-tabs button {
+  font-size: 13px;
+}
+
+html[data-visual-theme] .stats-range-control .month-picker-trigger {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+html[data-visual-theme] .app-shell.has-composer .entry-row {
+  grid-template-columns: 46px minmax(0, 1fr) minmax(76px, auto);
+}
+
+html[data-visual-theme] .app-shell.has-composer .category-icon {
+  width: 46px;
+  height: 46px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 11px;
+}
+
+html[data-visual-theme] .app-shell.has-composer .category-icon svg {
+  width: 26px;
+  height: 26px;
+  stroke-width: 1.55;
+}
+
+html[data-visual-theme] .app-shell.has-composer .entry-copy strong {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+html[data-visual-theme] .app-shell.has-composer .entry-copy small {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+html[data-visual-theme] .app-shell.has-composer .entry-amount {
+  font-family: "Helvetica Neue", "PingFang SC", -apple-system, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+}
+
+html[data-visual-theme] .app-shell.has-composer .mobile-entry-actions button,
+html[data-visual-theme] .app-shell.has-composer .mobile-composer .composer-input textarea {
+  font-family: var(--font-app);
+  font-weight: 400;
+}
+
+html[data-visual-theme] .stats-summary-strip strong,
+html[data-visual-theme] .donut-center strong,
+html[data-visual-theme] .category-ranking em,
+html[data-visual-theme] .category-detail em {
+  font-family: "Helvetica Neue", "PingFang SC", -apple-system, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+html[data-visual-theme] .stats-donut-card > header h2,
+html[data-visual-theme] .category-ranking strong,
+html[data-visual-theme] .category-detail strong,
+html[data-visual-theme] .compact-heading h1,
+html[data-visual-theme] .page-heading h1 {
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+html[data-visual-theme] .compact-heading > p {
+  font-weight: 400;
+}
+
+html[data-visual-theme] .me-menu-row strong,
+html[data-visual-theme] .settings-title h2,
+html[data-visual-theme] .managed-list strong,
+html[data-visual-theme] .managed-category-copy strong,
+html[data-visual-theme] .data-actions strong {
+  font-weight: 500;
+}
+
+@media (max-width: 340px) {
+  html[data-visual-theme] {
+    zoom: 1;
+  }
+  html[data-visual-theme] .entry-sheet {
+    width: 100vw !important;
+    height: 100dvh !important;
+    max-height: 100dvh;
+  }
+}

@@ -1,0 +1,607 @@
+/*
+ * Visual themes are intentionally layered after globals.css.
+ * globals.css is the complete original "大树绿" skin. 浅青色 and 深墨蓝
+ * share this typography and component base; deep-ink-blue.css recolors it.
+ */
+
+[data-visual-theme="dashu-green"] {
+  --chart-1: #146847;
+  --chart-2: #73a38c;
+  --chart-3: #d59a56;
+  --chart-4: #d97968;
+  --chart-5: #789aa0;
+  --chart-6: #9b87ad;
+  --chart-7: #b6ad74;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) {
+  --mist-font-sans: "PingFang SC", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --mist-font-number: "Helvetica Neue", "PingFang SC", -apple-system, sans-serif;
+  --background: #ffffff;
+  --foreground: #344549;
+  --card: #ffffff;
+  --card-foreground: #344549;
+  --popover: #ffffff;
+  --popover-foreground: #344549;
+  --primary: #6b9387;
+  --primary-foreground: #f7faf8;
+  --secondary: #e7efeb;
+  --secondary-foreground: #415d57;
+  --muted: #f2f6f4;
+  --muted-foreground: #768481;
+  --accent: #e5efea;
+  --accent-foreground: #415d57;
+  --border: #e0e6e3;
+  --input: #dbe5e0;
+  --ring: #8eae9f;
+  --page: #ffffff;
+  --paper: #ffffff;
+  --ink: #344549;
+  --forest: #6b9387;
+  --forest-deep: #405e57;
+  --sage: #e5efea;
+  --summary-card: #b5d7d1;
+  --summary-tab: #f7f9f7;
+  --line: #e0e6e3;
+  --quiet: #75827f;
+  --font-app: var(--mist-font-sans);
+  --chart-1: #5f8c82;
+  --chart-2: #91b2a8;
+  --chart-3: #b8ccc6;
+  --chart-4: #9eafb2;
+  --chart-5: #d2c2bc;
+  --chart-6: #c3cabc;
+  --chart-7: #d9e2dd;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]),
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) body,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell {
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--mist-font-sans);
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) body:has(.app-shell.has-composer) {
+  background: #ffffff;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer {
+  --page: #ffffff;
+  --paper: #ffffff;
+  --ink: #344549;
+  --forest: #6b9387;
+  --forest-deep: #405e57;
+  --sage: #e5efea;
+  --muted: #f2f6f4;
+  --line: #e0e6e3;
+  --quiet: #75827f;
+  --summary-card: #b5d7d1;
+  --summary-tab: #f7f9f7;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell :is(h1, h2, h3, h4, h5, h6, strong, b) {
+  font-weight: 500 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .topbar {
+  background: color-mix(in srgb, var(--page) 96%, transparent);
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell .brand-lockup,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .brand-lockup,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell .topbar-ledger-trigger,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .topbar-ledger-trigger {
+  color: #344549;
+  font-family: var(--mist-font-sans);
+  font-size: 17px;
+  font-weight: 400 !important;
+  letter-spacing: 0;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .brand-mark,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .brand-mark {
+  background: #84a99d;
+  color: #f7faf8;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .top-nav-button,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .top-nav-button {
+  position: relative;
+  background: transparent;
+  color: #49575a;
+  font-family: var(--mist-font-sans);
+  font-size: 15px;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .top-nav-button:hover {
+  background: transparent;
+  color: #648e81;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .top-nav-button.active,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .top-nav-button.active {
+  background: transparent;
+  color: #648e81;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .top-nav-button.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 1px;
+  width: 25px;
+  height: 2px;
+  border-radius: 2px;
+  background: #8ead9e;
+  transform: translateX(-50%);
+}
+
+/* Explicitly approved proportion change for the second-row segmented control. */
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .summary-card-frame.has-tabs {
+  gap: 16px;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .summary-ledger-tabs,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .summary-ledger-tabs.three-tabs {
+  width: 100%;
+  height: 36px;
+  margin-inline: 0;
+  padding: 2px;
+  border: 1px solid #dce4e0;
+  border-radius: 12px;
+  background: #f9fbfa;
+  box-shadow: none;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .summary-ledger-tabs .summary-ledger-tab,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .summary-ledger-tabs .summary-ledger-tab:first-child,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .summary-ledger-tabs .summary-ledger-tab:last-child {
+  height: 30px;
+  border-radius: 9px;
+  background: transparent;
+  color: #566461;
+  font-family: var(--mist-font-sans);
+  font-size: 15px;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .summary-ledger-tabs .summary-ledger-tab.active {
+  background: #dfece6;
+  color: #385650;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .summary-ledger-tab:focus-visible {
+  box-shadow: inset 0 0 0 1px #8fad9f;
+}
+
+/* Monthly card: dimensions and internal placement stay in globals.css. */
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .summary-card-frame.has-tabs .month-summary,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .month-summary {
+  background: #b5d7d1 url("/mist-paper-texture.svg") center / cover no-repeat;
+  color: #385759;
+  box-shadow: 0 8px 22px rgba(61, 103, 98, 0.07);
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .month-summary-header > p {
+  color: #3d5a5b;
+  font-size: 15px;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .month-picker-trigger.card {
+  color: #3d5a5b;
+  font-family: var(--mist-font-sans);
+  font-size: 15px;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .month-picker-trigger.card:hover,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .month-picker-trigger.card[data-state="open"] {
+  background: color-mix(in srgb, #f7faf8 22%, transparent);
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .month-picker-trigger.card svg {
+  color: #48696a;
+  stroke-width: 1.55;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .month-summary > .month-total {
+  color: #314f52;
+  font-family: var(--mist-font-number);
+  font-size: 44px;
+  font-weight: 300 !important;
+  letter-spacing: -0.6px;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .month-total .money-decimal {
+  font-size: 1em;
+  letter-spacing: 0;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .month-summary dl {
+  border-top-color: rgba(247, 250, 248, 0.72);
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .month-summary dl div + div {
+  border-left-color: rgba(247, 250, 248, 0.72);
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .month-summary dt {
+  color: #4e6a69;
+  font-size: 14px;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .month-summary dd {
+  color: #38575a;
+  font-family: var(--mist-font-number);
+  font-size: 19px;
+  font-weight: 300 !important;
+}
+
+/* Bill list typography and the approved 46pt outlined category tiles. */
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .view-mode-switch,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-period-tabs,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-type-switch,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .category-management-tabs {
+  background: #f1f6f3;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .view-mode-switch button,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-period-tabs button,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-type-switch button,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .category-management-tabs button {
+  color: #657471;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .view-mode-switch button.active,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-period-tabs button.active,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-type-switch button.active,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .category-management-tabs button.active {
+  background: #ffffff;
+  color: #385650;
+  font-weight: 500 !important;
+  box-shadow: 0 1px 4px rgba(88, 104, 101, 0.06);
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .day-group header h2 {
+  color: #48585b;
+  font-size: 13px;
+  font-weight: 400 !important;
+  letter-spacing: 0;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .day-group header span {
+  color: #586669;
+  font-family: var(--mist-font-number);
+  font-size: 13px;
+  font-weight: 400 !important;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .entry-row {
+  grid-template-columns: 46px minmax(0, 1fr) minmax(76px, auto);
+  border-bottom-color: #e1e6e4;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .category-icon {
+  width: 46px;
+  height: 46px;
+  border: 1px solid #dce3e0;
+  border-radius: 11px;
+  background: #fafcfb;
+  color: #506c6a;
+  box-shadow: none;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .category-icon svg {
+  width: 26px;
+  height: 26px;
+  stroke-width: 1.55;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .entry-copy strong {
+  color: #344448;
+  font-size: 15px;
+  font-weight: 400 !important;
+  line-height: 21px;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .entry-copy small {
+  color: #717f7e;
+  font-size: 12px;
+  font-weight: 400 !important;
+  line-height: 18px;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .entry-amount {
+  color: #405155;
+  font-family: var(--mist-font-number);
+  font-size: 15px;
+  font-weight: 400 !important;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+  text-align: right;
+}
+
+/* Bottom action geometry is untouched; only visual states are recolored. */
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .mobile-entry-actions {
+  border-color: #dbe5e0;
+  background: #ffffff;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .mobile-entry-actions button {
+  color: #4c6864;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .mobile-entry-actions .mobile-manual-entry {
+  background: #deeee7;
+  color: #436e62;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .mobile-entry-divider {
+  background: #dbe5e0;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .mobile-composer .quick-composer {
+  border-color: #dbe5e0;
+  background: #ffffff;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .mobile-composer .composer-input textarea,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .mobile-composer .composer-input textarea::placeholder {
+  color: #788482;
+  font-family: var(--mist-font-sans);
+  font-size: 15px;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .mobile-composer .mic-button {
+  color: #4c6864;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .mobile-composer .send-button,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .mobile-composer .send-button:disabled {
+  background: #8eb8a4;
+  color: #f7faf8;
+}
+
+/* Statistics uses the same hierarchy and a muted seven-color chart scale. */
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-ledger-trigger,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-range-control strong,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-range-control .month-picker-trigger,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-week-picker span,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-year-select {
+  color: #344448;
+  font-size: 14px;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-ledger-trigger > svg:first-child {
+  color: #648e81;
+  stroke-width: 1.55;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-search-field {
+  border-color: #dce7e2;
+  background: #ffffff;
+  color: #6d827b;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-search-field:focus-within {
+  border-color: #81a99b;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-search-results h2,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-search-result strong,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-search-result em {
+  color: #344448;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-period-tabs button,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-type-switch button {
+  color: #667572;
+  font-size: 13px;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-summary-strip span,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-donut-card > header span,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .donut-center span,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .donut-center small,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .category-ranking small,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .category-detail {
+  color: #75827f;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-summary-strip strong,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .donut-center strong,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .category-ranking em,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .category-detail em {
+  color: #344448;
+  font-family: var(--mist-font-number);
+  font-weight: 400 !important;
+  letter-spacing: 0;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .stats-donut-card > header h2 {
+  color: #344448;
+  font-weight: 400 !important;
+  letter-spacing: 0;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .ranking-icon,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .calendar-entry-list > button > span:first-child {
+  border: 1px solid #dce3e0;
+  background: #f7faf8;
+  color: #506c6a;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .category-ranking strong,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .calendar-entry-list strong {
+  color: #344448;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .category-detail strong,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .category-detail em,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .calendar-entry-list em,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .calendar-cell > strong {
+  color: #405155;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .calendar-money.expense {
+  color: #506368;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .calendar-day-detail header p {
+  color: #648e81;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .recharts-sector:focus {
+  outline-color: #8fad9f;
+}
+
+/* Settings and all management subviews inherit the same quiet system. */
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .compact-heading > p,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .page-heading > p {
+  color: #7e8d89;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .compact-heading h1,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .page-heading h1 {
+  color: #344448;
+  font-weight: 400 !important;
+  letter-spacing: 0;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .compact-heading > span,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .page-heading > span {
+  color: #75827f;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .me-menu-row strong,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .settings-title h2,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .managed-list strong,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .managed-category-copy strong,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .data-actions strong {
+  color: #344448;
+  font-weight: 500 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .me-menu-row small,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .settings-title p,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .managed-list small,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .category-management-note,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .data-actions small,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .privacy-note p,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .future-management p {
+  color: #75827f;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .settings-icon,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .me-menu-row > span:first-child,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .managed-list > button > span:first-child,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .managed-category-icon {
+  border-color: #dce3e0;
+  background: #edf4f0;
+  color: #506c6a;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .settings-icon svg,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .me-menu-row svg,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .managed-list svg,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .managed-category-icon svg,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .data-actions svg {
+  stroke-width: 1.55;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .me-menu-row > svg,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .category-expand-icon,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .data-actions > button > svg:last-child {
+  color: #84938f;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .subpage-heading p,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .subpage-heading span,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .managed-ledger-copy small,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .managed-member-ledger small {
+  color: #75827f;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .subpage-heading h1,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .managed-ledger-copy strong,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .managed-member-ledger strong,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .managed-category-copy strong {
+  color: #344448;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .managed-ledger-icon,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .managed-category-icon {
+  background: #edf4f0;
+  color: #506c6a;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .ledger-type-badge.personal,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .ledger-type-badge.family {
+  background: #e5efea;
+  color: #45675f;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .managed-ledger-actions .current-badge,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .managed-member-ledger .current-badge {
+  background: #8eb8a4;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .set-default-ledger-button,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .remove-category-button {
+  color: #45675f;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .rename-ledger-form > label,
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .create-category-form > label {
+  color: #344448;
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) :is(.ledger-menu, .month-picker-popover, .rename-dialog, .create-category-dialog, .review-item, .entry-sheet) {
+  border-color: #e0e6e3;
+  background: #ffffff;
+  color: #344549;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) :is(input, textarea, select) {
+  color: #344549;
+  font-family: var(--mist-font-sans);
+  font-weight: 400 !important;
+}
+
+:is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) :is(input, textarea)::placeholder {
+  color: #84938f;
+}
+
+@media (max-width: 374px) {
+  :is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .summary-ledger-tabs,
+  :is([data-visual-theme="mist-paper"], [data-visual-theme="deep-ink-blue"]) .app-shell.has-composer .summary-ledger-tabs.three-tabs {
+    width: 100%;
+  }
+}

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600">
+  <defs>
+    <filter id="wash" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.003 0.008" numOctaves="2" seed="11" stitchTiles="stitch" result="cloud" />
+      <feColorMatrix in="cloud" type="matrix" values="0 0 0 0 .36  0 0 0 0 .60  0 0 0 0 .58  1 0 0 0 0" />
+      <feComponentTransfer><feFuncA type="gamma" amplitude=".9" exponent="4" offset="0" /></feComponentTransfer>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.21" numOctaves="3" seed="19" stitchTiles="stitch" result="noise" />
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  .34 0 0 0 -.08" />
+    </filter>
+    <filter id="brush" x="-15%" y="-25%" width="130%" height="150%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014 0.065" numOctaves="2" seed="7" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="18" xChannelSelector="R" yChannelSelector="B" />
+      <feGaussianBlur stdDeviation="0.55" />
+    </filter>
+  </defs>
+  <rect width="960" height="600" filter="url(#wash)" opacity=".65" />
+  <rect width="960" height="600" filter="url(#grain)" opacity=".72" />
+  <g fill="none" stroke="#fff" stroke-linecap="round" filter="url(#brush)" transform="rotate(-17 480 300)">
+    <g opacity=".16" stroke-width="13">
+      <path d="M-90 72 C105 45 253 113 438 71 S753 39 1044 84" stroke-dasharray="154 52 76 28 120 68" />
+      <path d="M-105 184 C83 151 260 218 426 176 S737 140 1058 189" stroke-dasharray="112 38 186 56 70 39" />
+      <path d="M-92 305 C109 265 251 335 457 296 S751 260 1045 302" stroke-dasharray="190 59 93 41 101 36" />
+      <path d="M-77 441 C114 410 287 476 474 432 S767 401 1057 446" stroke-dasharray="138 44 121 49 172 67" />
+      <path d="M-85 548 C131 523 268 579 468 543 S789 505 1051 551" stroke-dasharray="77 36 156 45 112 33" />
+    </g>
+    <g opacity=".11" stroke-width="4">
+      <path d="M-35 112 C138 80 263 144 433 102 S756 71 1003 118" stroke-dasharray="130 22 63 38" />
+      <path d="M-45 229 C105 197 289 260 453 217 S791 182 1009 236" stroke-dasharray="86 32 144 27" />
+      <path d="M-50 355 C162 326 273 386 487 348 S774 310 1009 361" stroke-dasharray="152 41 72 29" />
+      <path d="M-34 482 C164 454 289 519 471 472 S753 443 1007 493" stroke-dasharray="103 28 129 38" />
+    </g>
+  </g>
+  <path d="M-40 214 C177 139 328 183 499 145 S806 129 1004 183 L1010 230 C782 172 621 215 455 239 S159 226 -40 281Z" fill="#fff" opacity=".045" filter="url(#brush)" />
+  <path d="M-42 489 C162 439 309 491 485 445 S786 411 1012 467 L1011 504 C797 455 629 514 470 525 S175 505 -42 545Z" fill="#fff" opacity=".045" filter="url(#brush)" />
+</svg>
